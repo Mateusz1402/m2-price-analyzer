@@ -1,0 +1,12 @@
+API GUS BDL
+
+grupy mediany cen za m2 z podziałem na kwartały
+https://bdl.stat.gov.pl/api/v1/variables?subject-id=P3892&page=0
+ogółem 1 kwartał:
+https://bdl.stat.gov.pl/api/v1/data/By-Variable/1607934?unit-level=5
+ogółem 2 kwartał:
+https://bdl.stat.gov.pl/api/v1/data/By-Variable/1607954?unit-level=5
+ogółem 3 kwartał:
+https://bdl.stat.gov.pl/api/v1/data/By-Variable/1607974?unit-level=5
+ogółem 4 kwartał:
+https://bdl.stat.gov.pl/api/v1/data/By-Variable/1607994?unit-level=5
