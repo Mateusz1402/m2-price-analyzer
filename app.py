@@ -85,13 +85,14 @@ def save_to_neon(data):
     conn = psycopg2.connect(NEON_DATABASE_URL)
     cur = conn.cursor()
     
-    cur.execute("""
+    query ="""
         INSERT INTO housing_data (unit_id, unit_name, year, quarter, value)
         VALUES %s
         ON CONFLICT (unit_id, year, quarter) 
         DO UPDATE SET value = EXCLUDED.value, unit_name = EXCLUDED.unit_name;
-    """)
-    
+    """
+    execute_values(cur, query, data)
+
     conn.commit()
     cur.close()
     conn.close()

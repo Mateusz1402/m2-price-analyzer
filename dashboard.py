@@ -120,4 +120,4 @@ with col2:
 
 # TABELA Z DANYMI
 st.subheader("📋 Dane źródłowe")
-st.dataframe(filtered_df.sorst_values(['year', 'quarter'], ascending=False), use_container_width=True)
+st.dataframe(filtered_df.sort_values(['year', 'quarter'], ascending=False), use_container_width=True)
